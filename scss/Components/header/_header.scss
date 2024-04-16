@@ -1,0 +1,6 @@
+@import "../../Recycle/Mixin";
+
+.header {
+  @include setSize($w: 100%);
+  @include flex($align: center, $isColumn: true);
+}

@@ -1,0 +1,50 @@
+@import "../../Recycle/Mixin";
+@import "../../Recycle/variable";
+
+.search {
+  max-width: 48.8rem;
+  @include setSize($w: 100%, $h: 5rem);
+  @include flex($justify: space-between);
+  border-radius: 2.6rem;
+  border: $naver-green 1px solid;
+  background-color: #fff;
+  box-shadow: 0 5px 10px 0 rgba(117, 145, 181, 0.12);
+
+  .search__logo-box {
+    @include setSize($w: 5rem, $h: 5rem);
+    @include flex($justify: flex-end, $align: center);
+
+    .search__logo-img {
+      @include headerImage($x: 0px, $y: -194px);
+      @include setSize($w: 40px, $h: 40px);
+
+      background-color: $naver-green;
+      border-radius: 26px;
+    }
+  }
+
+  .search__form {
+    @include setSize($w: 75%, $h: 5rem);
+    @include flex($align: center);
+
+    .search__input {
+      @include setSize($w: 100%, $h: 2.2rem);
+      font : {
+        size: 1.8rem;
+      }
+      text-overflow: ellipsis;
+    }
+  }
+
+  .search__searchicon-box {
+    @include setSize($w: 4rem, $h: 5rem);
+    @include flex($align: center);
+
+    .search__searchicon-icon {
+      @include headerImage($x: -258px, $y: -194px);
+      @include setSize($w: 34px, $h: 34px);
+      background-color: $naver-green;
+      border-radius: 26px;
+    }
+  }
+}

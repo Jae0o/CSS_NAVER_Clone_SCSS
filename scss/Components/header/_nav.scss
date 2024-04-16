@@ -1,0 +1,69 @@
+@import "../../Recycle/Mixin";
+
+.nav {
+  @include setSize($w: 100%, $h: 12rem);
+  @include flex($justify: space-between);
+
+  .nav__aside {
+    @include flex;
+
+    .nav__link-box {
+      @include setSize($w: 5.4rem, $h: 6rem);
+      @include flex($justify: flex-end, $align: center);
+
+      .nav__link-icon {
+        @include headerImage($x: -49px, $y: -145px);
+        @include setSize($w: 44px, $h: 44px);
+        cursor: pointer;
+      }
+    }
+
+    .nav__pay-box {
+      @include setSize($w: 4.4rem, $h: 6rem);
+      @include flex($align: center);
+
+      .nav__pay-icon {
+        @include headerImage($x: -90px, $y: -194px);
+        @include setSize($w: 40px, $h: 40px);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .nav__user {
+    @include flex;
+
+    .nav__talk-box {
+      @include setSize($w: 4rem, $h: 6rem);
+      @include flex($align: center);
+
+      .nav__talk-icon {
+        @include headerImage($x: -135px, $y: -194px);
+        @include setSize($w: 40px, $h: 40px);
+        cursor: pointer;
+      }
+    }
+
+    .nav__notify-box {
+      @include setSize($w: 4rem, $h: 6rem);
+      @include flex($align: center);
+
+      .nav__notify-icon {
+        @include headerImage($x: -45px, $y: -194px);
+        @include setSize($w: 40px, $h: 40px);
+        cursor: pointer;
+      }
+    }
+
+    .nav__avatar-box {
+      @include setSize($w: 6rem, $h: 6rem);
+      @include flex($align: center, $justify: center);
+
+      .nav__avatar-img {
+        @include setSize($w: 30px, $h: 30px);
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+  }
+}

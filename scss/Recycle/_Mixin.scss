@@ -1,0 +1,73 @@
+@mixin flex($justify: flex-start, $align: flex-start, $isColumn: false) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  @if ($isColumn) {
+    flex-direction: column;
+  }
+}
+
+@mixin headerImage($x: 0px, $y: 0px) {
+  background: {
+    image: url("../../img/nav/header_icon.png");
+    size: 323px 273px;
+    repeat: no-repeat;
+    position: $x $y;
+  }
+  display: block;
+}
+
+@mixin mainImage($x: 0px, $y: 0px) {
+  background: {
+    image: url("../../img/main/main_icon1.png");
+    size: 408px 372px;
+    repeat: no-repeat;
+    position: $x $y;
+  }
+  display: block;
+}
+
+@mixin footerImage($x: 0px, $y: 0px) {
+  background: {
+    image: url("../../img/footer/footer-icon.png");
+    size: 254px 220px;
+    repeat: no-repeat;
+    position: $x $y;
+  }
+  display: block;
+}
+
+@mixin mainWeatherIcon($x: 0px, $y: 0px) {
+  background: {
+    image: url("../../img/main/main_icon2.png");
+    size: 484px 459px;
+    repeat: no-repeat;
+    position: $x $y;
+  }
+  display: block;
+}
+
+@mixin setSize($w: auto, $h: auto) {
+  width: $w;
+  height: $h;
+}
+
+@mixin scrollNone {
+  overflow-x: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@mixin cardSetting {
+  @include setSize($w: 100%);
+  margin : {
+    bottom: 2rem;
+  }
+
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+}

@@ -1,0 +1,44 @@
+@import "../../../Recycle/Mixin";
+
+.main__aside {
+  @include cardSetting;
+
+  .aside__img {
+    @include setSize($w: 100%);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    object-fit: contain;
+  }
+
+  .aside__info {
+    @include flex();
+    padding: 1.8rem 1.5rem;
+
+    .aside__info-logo {
+      @include setSize($w: 5rem, $h: 5rem);
+      border-radius: 50%;
+      object-fit: contain;
+    }
+    .aside__info-box {
+      margin-left: 1.2rem;
+      @include setSize($h: 5rem);
+      @include flex($justify: center);
+      flex-direction: column;
+      overflow: hidden;
+
+      .aside__info-title {
+        font: {
+          size: 1.7rem;
+          weight: 400;
+          text-wrap: nowrap;
+        }
+      }
+
+      .aside__info-subtitle {
+        font-size: 1.4rem;
+        color: #767678;
+        text-wrap: nowrap;
+      }
+    }
+  }
+}

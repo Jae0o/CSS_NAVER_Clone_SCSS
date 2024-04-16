@@ -1,0 +1,33 @@
+@import "../../Recycle/Mixin";
+
+.menu {
+  @include setSize($w: calc(20.8rem + 21vw), $h: 15.2rem);
+  @include flex($isColumn: true);
+  margin: 1.2rem 0;
+
+  .menu__top,
+  .menu__bottom {
+    @include setSize($w: 100%, $h: 7.6rem);
+    @include flex($justify: space-between);
+
+    .menu__list {
+      @include setSize($w: 5.2rem, $h: 6.4rem);
+      @include flex($isColumn: true, $align: center, $justify: space-between);
+      margin-top: 1.2rem;
+
+      .menu__list-img {
+        @include setSize($w: 4.4rem, $h: 4.4rem);
+      }
+
+      .menu__list-text {
+        margin-top: 0.5rem;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+@media (min-width: 515px) {
+  .menu {
+    width: 316px;
+  }
+}

@@ -1,0 +1,57 @@
+@import "./Components/header/header";
+@import "./Components/header/nav";
+@import "./Components/header/search";
+@import "./Components/header/menu";
+@import "./Components/aside/aside";
+@import "./Components/main/main";
+@import "./Components/footer/footer";
+// card
+@import "./Components/main/card/card-clip";
+@import "./Components/main/card/card-stock";
+@import "./Components/main/card/card-weather";
+@import "./Components/main/card/card-aside";
+@import "./Components/main/card/card-pan";
+
+body,
+button,
+article,
+section,
+footer,
+p,
+ul,
+li,
+header,
+input,
+form,
+div,
+span,
+h4,
+h6 {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eaeef3;
+  @include setSize($w: 100%);
+  @include flex($align: center);
+  flex-direction: column;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}

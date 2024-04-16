@@ -1,0 +1,44 @@
+@import "../../Recycle/Mixin";
+.main {
+  @include setSize($w: fit-content);
+  @include flex($justify: center);
+  margin-top: 2rem;
+
+  .main__left,
+  .main__middle,
+  .main__right {
+    @include setSize($w: 100%);
+    max-width: 38rem;
+    margin: 0 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .main {
+    @include setSize($w: 100%);
+    .main__right {
+      display: none;
+    }
+
+    .main__left,
+    .main__middle {
+      @include setSize($w: 100%);
+      max-width: 42rem;
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .main {
+    @include setSize($w: 100%);
+    .main__right,
+    .main__middle {
+      display: none;
+    }
+
+    .main__left {
+      @include setSize($w: 100%);
+      max-width: 42rem;
+    }
+  }
+}

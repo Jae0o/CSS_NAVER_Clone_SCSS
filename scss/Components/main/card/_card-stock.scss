@@ -1,0 +1,114 @@
+@import "../../../Recycle/Mixin";
+
+.main__stock {
+  @include cardSetting;
+  padding: 0 1.6rem;
+  padding-bottom: 1.2rem;
+
+  .stock__info {
+    @include setSize($h: 10rem);
+    @include flex($align: center);
+    @include scrollNone;
+
+    .stock__info-item {
+      min-width: 11rem;
+      margin : {
+        left: 1rem;
+        right: 2.4rem;
+      }
+      border-right: 1px solid #767678;
+
+      .stock__info-title {
+        font: {
+          size: 1.4rem;
+          weight: 400;
+        }
+        margin: {
+          bottom: 0.8rem;
+        }
+      }
+
+      .stock__info-price {
+        font: {
+          size: 2rem;
+          weight: 800;
+        }
+      }
+
+      .stock__info-gap {
+        margin-bottom: 0.2rem;
+        @include flex();
+        font: {
+          size: 1.1rem;
+          weight: 600;
+        }
+
+        .stock__info-arrowdown {
+          @include mainImage($x: -191px, $y: -147px);
+          @include setSize($w: 8px, $h: 7px);
+          margin: {
+            right: 4px;
+            top: 2px;
+          }
+        }
+
+        .stock__info-arrowup {
+          @include mainImage($x: -178px, $y: -147px);
+          @include setSize($w: 8px, $h: 7px);
+          margin: {
+            right: 4px;
+            top: 2px;
+          }
+        }
+
+        .stock__info-persent {
+          margin-left: 4px;
+        }
+      }
+
+      .color-blue {
+        color: #2196f3;
+      }
+
+      .color-red {
+        color: #f44336;
+      }
+    }
+
+    .start-item {
+      margin-left: 0;
+    }
+
+    .last-item {
+      border-right: none;
+      margin-right: 0px;
+    }
+  }
+
+  .stock__linklist {
+    background-color: #f5f8fb;
+    @include setSize($h: 4rem);
+    @include flex();
+    border-radius: 22px;
+
+    .stock__linklist-item {
+      @include setSize($w: 100%, $h: 4rem);
+      @include flex($justify: center, $align: center);
+      padding: 0 0.5rem;
+      cursor: pointer;
+
+      .stock__linklist-button {
+        @include setSize($w: 100%);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.border-left {
+  border-left: 2px solid rgba(125, 127, 133, 0.2);
+}
+
+.border-right {
+  border-right: 2px solid rgba(125, 127, 133, 0.2);
+}

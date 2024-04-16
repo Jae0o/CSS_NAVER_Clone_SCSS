@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko-KO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/title/naver_title_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./scss/index.css" type="text/css" />
+    <title>NAVER</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <!-- nav -->
+      <nav class="nav">
+        <!-- aside -->
+        <aside class="nav__aside">
+          <div class="nav__link-box">
+            <span class="nav__link-icon"></span>
+          </div>
+          <div class="nav__pay-box">
+            <span class="nav__pay-icon"></span>
+          </div>
+        </aside>
+        <!-- user -->
+        <div class="nav__user">
+          <div class="nav__talk-box">
+            <span class="nav__talk-icon"></span>
+          </div>
+          <div class="nav__notify-box">
+            <span class="nav__notify-icon"></span>
+          </div>
+          <div class="nav__avatar-box">
+            <img src="./img/nav/avatar.png" class="nav__avatar-img" />
+          </div>
+        </div>
+      </nav>
+
+      <!-- search -->
+      <div class="search">
+        <div class="search__logo-box">
+          <span class="search__logo-img"></span>
+        </div>
+        <form class="search__form">
+          <input class="search__input" placeholder="검색어를 입력해주세요." />
+        </form>
+        <div class="search__searchicon-box">
+          <span class="search__searchicon-icon"></span>
+        </div>
+      </div>
+      <!-- menu -->
+      <div class="menu">
+        <ul class="menu__top">
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list1.png" alt="menu_list1" />
+            <span class="menu__list-text">뉴스판</span>
+          </li>
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list2.png" alt="menu_list2" />
+            <span class="menu__list-text">쇼핑판</span>
+          </li>
+
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list3.png" alt="menu_list3" />
+            <span class="menu__list-text">경제판</span>
+          </li>
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list4.png" alt="menu_list4" />
+            <span class="menu__list-text">스포츠판</span>
+          </li>
+        </ul>
+        <ul class="menu__bottom">
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list5.png" alt="menu_list5" />
+            <span class="menu__list-text">메일</span>
+          </li>
+
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list6.png" alt="menu_list6" />
+            <span class="menu__list-text">카페</span>
+          </li>
+
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list7.png" alt="menu_list7" />
+            <span class="menu__list-text">블로그</span>
+          </li>
+
+          <li class="menu__list">
+            <img class="menu__list-img" src="./img/nav/menu/list8.png" alt="menu_list8" />
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- aside  광고 구역 -->
+    <aside class="ad">
+      <a class="ad_container">
+        <img class="ad__img" src="./img/aside/ad_img.png" alt="ad_img" />
+      </a>
+    </aside>
+
+    <main class="main">
+      <!-- left 라인 -->
+      <section class="main__left">
+        <article class="main__weather">
+          <div class="weather__info">
+            <div class="weather__info-box">
+              <span class="weather__info-img"></span>
+              <div class="weather__info-textarea">
+                <h4 class="weather__info-title">16.8° 부산</h4>
+                <p class="weather__info-state">미세 <span>보통</span> · 초미세 <span>보통</span></p>
+              </div>
+            </div>
+            <div class="weather__place">
+              <p class="weather__place-text">내 위치찾기</p>
+              <span class="weather__place-icon"></span>
+            </div>
+          </div>
+          <div class="weather__message">
+            <p class="weather__message-top">위치 찾기를 눌러 현 위치의 시간대별,주간날씨와</p>
+            <p class="weather__message-bottom">미세먼지 예보를 여기에서 바로 보세요</p>
+          </div>
+        </article>
+
+        <!-- 클립 -->
+
+        <article class="main__clip">
+          <h4 class="clip__title">
+            <span class="clip__title-logo"></span>
+            매일 찾는 짧은 즐거움
+          </h4>
+
+          <ul class="clip__list">
+            <!-- 1 -->
+            <li class="clip__item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail1.jpeg" alt="thumbnail1" />
+              </div>
+              <p class="clip__item-title">[미소아라]강아지 투명벽 챌린지</p>
+              <p class="clip__item-channel">미소아라</p>
+            </li>
+            <!-- 2 -->
+            <li class="clip__item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail2.jpeg" alt="thumbnail2" />
+              </div>
+              <p class="clip__item-title">기모 코듀로이 팬츠 신상 입어보기</p>
+              <p class="clip__item-channel">밍스</p>
+            </li>
+            <!-- 3 -->
+            <li class="clip__item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail3.jpeg" alt="thumbnail3" />
+              </div>
+              <p class="clip__item-title">부드러운 치즈 스판 부츠컷 밴딩</p>
+              <p class="clip__item-channel">클로젯바이</p>
+            </li>
+            <!-- 4 -->
+            <li class="clip__item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail4.jpeg" alt="thumbnail4" />
+              </div>
+              <p class="clip__item-title">대충뭐 광고하는 제목이라 제목적기가 싫었어요</p>
+              <p class="clip__item-channel">연희골프</p>
+            </li>
+            <!-- 5 -->
+            <li class="clip__item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail5.jpeg" alt="thumbnail5" />
+              </div>
+              <p class="clip__item-title">수납장 팬트리 어디에서나 만능</p>
+              <p class="clip__item-channel">살림공간</p>
+            </li>
+            <!-- 6 -->
+            <li class="clip__item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail6.jpeg" alt="thumbnail6" />
+              </div>
+              <p class="clip__item-title">고양이가 오리를 뭐서워 한다고요? 오이를 .. 까지만 보이네..</p>
+              <p class="clip__item-channel">아기고양이 누릉지</p>
+            </li>
+            <!-- 7 -->
+            <li class="clip__item end-item">
+              <div class="clip__thumbnail-box">
+                <img class="clip__thumbnail-img" src="./img/main/clip/thumnail7.jpeg" alt="thumbnail7" />
+              </div>
+              <p class="clip__item-title">셀카 v로그 강릉 먹방 #강릉 #먹방 #맛집 #몰라 #그다음 # 멘트를 #몰라요</p>
+              <p class="clip__item-channel">lemon</p>
+            </li>
+          </ul>
+        </article>
+
+        <!-- pan -->
+
+        <article class="main__pan">
+          <ul class="pan__list">
+            <li class="pan__item">
+              <span class="pan__icon-left"></span>
+              <div class="pan__textbox left">
+                <h6 class="pan__title">패션뷰티판</h6>
+                <p class="pan__subtitle">가장 먼저 만나는 신상과 트렌드</p>
+              </div>
+              <img class="pan__img" src="./img/main/pan/pan-item1.jpg" />
+            </li>
+
+            <li class="pan__item">
+              <img class="pan__img" src="./img/main/pan/pan-item2.jpg" />
+
+              <div class="pan__textbox">
+                <h6 class="pan__title">알짜정보는 경제판</h6>
+                <p class="pan__subtitle">오늘의 경제이슈, 돈되는 정보가 알...</p>
+              </div>
+              <span class="pan__icon-right"></span>
+            </li>
+            <li class="pan__item">
+              <img class="pan__img" src="./img/main/pan/pan-item3.png" />
+
+              <div class="pan__textbox">
+                <h6 class="pan__title">우리 동네 중고거래 구경하기</h6>
+                <p class="pan__subtitle">팔 사람, 살 사람 모두 모여요!</p>
+              </div>
+              <span class="pan__icon-right"></span>
+            </li>
+            <li class="pan__item">
+              <img class="pan__img" src="./img/main/pan/pan-item4.jpg" />
+
+              <div class="pan__textbox">
+                <h6 class="pan__title">놓칠 수 없는 꿀잼</h6>
+                <p class="pan__subtitle">오늘의 인기 웹툰 만나러 가기</p>
+              </div>
+              <span class="pan__icon-right"></span>
+            </li>
+          </ul>
+        </article>
+        <!-- 광고 -->
+        <article class="main__aside">
+          <img class="aside__img" src="./img/main/aside3/aside3_img.jpg" />
+          <div class="aside__info">
+            <img class="aside__info-logo" src="./img/main/aside3/aside3_logo.png" />
+            <div class="aside__info-box">
+              <h6 class="aside__info-title">새로워진 네이버앱</h6>
+              <p class="aside__info-subtitle">이제 탭하고 사용해보세요!</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- 중앙 라인 -->
+      <section class="main__middle">
+        <article class="main__stock">
+          <ul class="stock__info">
+            <li class="stock__info-item start-item">
+              <h6 class="stock__info-title">코스피</h6>
+              <p class="stock__info-price">2,403.32</p>
+              <p class="stock__info-gap color-blue">
+                <span class="stock__info-arrowdown"></span>
+                23.76
+                <span class="stock__info-persent">-0.98%</span>
+              </p>
+            </li>
+            <li class="stock__info-item">
+              <h6 class="stock__info-title">코스닥</h6>
+              <p class="stock__info-price">879.06</p>
+              <p class="stock__info-gap color-blue">
+                <span class="stock__info-arrowdown"></span>
+                13.58
+                <span class="stock__info-persent">-1.69%</span>
+              </p>
+            </li>
+            <li class="stock__info-item">
+              <h6 class="stock__info-title">나스닥100 선물</h6>
+              <p class="stock__info-price">15,240.50</p>
+              <p class="stock__info-gap color-blue">
+                <span class="stock__info-arrowdown"></span>
+                15.50
+                <span class="stock__info-persent">-0.10%</span>
+              </p>
+            </li>
+            <li class="stock__info-item">
+              <h6 class="stock__info-title">S&P500 선물</h6>
+              <p class="stock__info-price">4,364.00</p>
+              <p class="stock__info-gap color-red">
+                <span class="stock__info-arrowup"></span>
+                1.75
+                <span class="stock__info-persent">+0.04%</span>
+              </p>
+            </li>
+            <li class="stock__info-item last-item">
+              <h6 class="stock__info-title">환율 USD</h6>
+              <p class="stock__info-price">1,315.70</p>
+              <p class="stock__info-gap color-red">
+                <span class="stock__info-arrowup"></span>
+                4.20
+                <span class="stock__info-persent">+0.32%</span>
+              </p>
+            </li>
+          </ul>
+          <ul class="stock__linklist">
+            <li class="stock__linklist-item">
+              <button class="stock__linklist-button border-right">국내 증시</button>
+            </li>
+            <li class="stock__linklist-item">
+              <button class="stock__linklist-button">해외 증시</button>
+            </li>
+            <li class="stock__linklist-item">
+              <button class="stock__linklist-button border-left">경제 지표</button>
+            </li>
+          </ul>
+        </article>
+        <!-- 광고 -->
+        <article class="main__aside">
+          <img class="aside__img" src="./img/main/aside2/aside2_img.png" />
+          <div class="aside__info">
+            <img class="aside__info-logo" src="./img/main/aside2/aside2_logo.png" />
+            <div class="aside__info-box">
+              <h6 class="aside__info-title">네이버쇼핑 렌탈</h6>
+              <p class="aside__info-subtitle">매월 네이버페이 포인트 적립까지!</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- right 라인 -->
+      <section class="main__right">
+        <!-- 광고  -->
+        <article class="main__aside">
+          <img class="aside__img" src="./img/main/aside1/aside1_img.png" />
+          <div class="aside__info">
+            <img class="aside__info-logo" src="./img/main/aside1/aside1_logo.png" />
+            <div class="aside__info-box">
+              <h6 class="aside__info-title">데이터센터 각 세종 최초 공개</h6>
+              <p class="aside__info-subtitle">네이버 데이터센터엔 없는 세 가지?</p>
+            </div>
+          </div>
+        </article>
+        <!-- 광로 -->
+        <article class="main__aside">
+          <img class="aside__img" src="./img/main/aside4/aside4_img.png" />
+          <div class="aside__info">
+            <img class="aside__info-logo" src="./img/main/aside4/aside4_logo.jpg" />
+            <div class="aside__info-box">
+              <h6 class="aside__info-title">오늘 딱 한문장만 외워봐요</h6>
+              <p class="aside__info-subtitle">VIBE오디오 무료 감상</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__event">
+        <button class="event__button">
+          <span class="event__img"></span>
+          <p class="evnet__text">이벤트 모아보기</p>
+          <span class="event__icon-arrow"></span>
+        </button>
+      </div>
+      <div class="footer__toolbox">
+        <div class="toolbox__fontbutton">
+          <p class="toolbox__fontbutton-small">가 -</p>
+          <p class="toolbox__fontbutton-large">가 +</p>
+        </div>
+        <div class="toolbox__homebutton">
+          <span class="toolbox__homebutton-icon"></span>
+        </div>
+      </div>
+      <div class="footer__info">
+        <ul class="info__top">
+          <li class="info__item">로그아웃</li>
+          <li class="info__item">전체서비스</li>
+          <li class="info__item">PC버전</li>
+        </ul>
+        <ul class="info__bottom">
+          <li class="info__item">이용약관</li>
+          <li class="info__item">개인정보처리방침</li>
+          <li class="info__item">고객센터</li>
+        </ul>
+      </div>
+      <div class="footer__brand">
+        <span class="footer__brand-logo"></span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+@import "../../../Recycle/Mixin";
+
+.main__pan {
+  @include cardSetting;
+  padding: 0 1.6rem;
+  .pan__list {
+    @include setSize($w: 100%, $h: 100%);
+    padding : {
+      top: 1rem;
+      bottom: 1rem;
+    }
+    .pan__item {
+      @include setSize($w: 100%, $h: 52px);
+      @include flex($align: center, $justify: space-between);
+      margin : {
+        top: 2rem;
+        bottom: 2rem;
+      }
+
+      .pan__icon-left {
+        @include mainImage($x: -295px, $y: -322px);
+        @include setSize($w: 20px, $h: 16px);
+      }
+      .pan__icon-right {
+        @include mainImage($x: -320px, $y: -322px);
+        @include setSize($w: 20px, $h: 16px);
+        padding-right: 18px;
+      }
+
+      .pan__textbox {
+        @include setSize($w: 100%, $h: 52px);
+        @include flex($justify: center);
+        flex-direction: column;
+        padding: 0 2rem;
+
+        .pan__title {
+          font : {
+            size: 1.6rem;
+          }
+          color: $naver-green;
+        }
+
+        .pan__subtitle {
+          font-size: 1.3rem;
+        }
+      }
+
+      .left {
+        align-items: flex-end;
+
+        .pan__title {
+          color: #9761ed;
+        }
+      }
+      .pan__img {
+        @include setSize($w: 52px, $h: 52px);
+        border-radius: 50%;
+      }
+    }
+  }
+}

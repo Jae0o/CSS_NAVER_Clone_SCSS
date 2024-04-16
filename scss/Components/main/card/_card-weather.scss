@@ -1,0 +1,68 @@
+@import "../../../Recycle/Mixin";
+
+.main__weather {
+  @include cardSetting;
+  padding: 0 1.6rem;
+
+  .weather__info {
+    @include setSize($h: 8rem);
+    @include flex($justify: space-between, $align: center);
+    text-wrap: nowrap;
+
+    .weather__info-box {
+      @include flex($align: center);
+      @include setSize($h: 100%);
+
+      .weather__info-img {
+        @include setSize($w: 42px, $h: 42px);
+        @include mainWeatherIcon($x: -220px, $y: -48px);
+        margin: {
+          right: 2rem;
+        }
+      }
+
+      .weather__info-textarea {
+        @include setSize($h: 100%);
+        @include flex($justify: center);
+        flex-direction: column;
+
+        .weather__info-title {
+          font-size: 1.6rem;
+        }
+
+        .weather__info-state {
+          font-size: 1.4rem;
+
+          span {
+            color: $naver-green;
+          }
+        }
+      }
+    }
+
+    .weather__place {
+      @include flex($align: center);
+      .weather__place-text {
+        font-size: 1.4rem;
+      }
+
+      .weather__place-icon {
+        @include setSize($w: 16px, $h: 16px);
+        @include mainImage($x: -390px, $y: - 207px);
+        margin: 3px 6px;
+      }
+    }
+  }
+
+  .weather__message {
+    @include flex($align: center, $justify: center, $isColumn: true);
+    @include setSize($w: 100%);
+    padding: {
+      top: 0.6rem;
+      bottom: 3rem;
+    }
+    color: #767678;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
